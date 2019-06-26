@@ -1,2 +1,0 @@
-# scalaLearning
-Scala学习
