@@ -22,6 +22,7 @@ import scala.collection.mutable.ArrayBuffer
   *   第一点：是在不修改已有的array的基础上完成的，非常适合大数据的处理
   *   第二点：在大数据处理中spake业务操作的核心思想类似于yield,来通过使用function对每个元素操作获得新的元素获得新的集合，其实就是新的RDD,
   *   例如MapPartitionsRDD
+  * 9.集合操作往往能通过丰富的操作算子，例如通过filter来过滤，map来进行每一个元素的加工
   **/
 object ArrayOps {
   def main(args: Array[String]): Unit = {
@@ -60,7 +61,11 @@ object ArrayOps {
     val arrayAddOne = for(item <- array) yield item + 1
     println(arrayAddOne.mkString(","))
 
-    val arrayOdd = for(item <- array if item % 2 == 0) yield  item + 1
-    println(arrayOdd.mkString(","))
+    val arrayEven = for(item <- array if item % 2 == 0) yield  item + 1
+    println(arrayEven.mkString(","))
+    //可以使用filter来过滤出需要的元素  可以使用_来代替 x => x
+    println(array.filter(x => x % 2 == 0).mkString(","))
+    println(array.filter{ _% 2 == 0}.mkString(","))
+    println(array.filter{ _% 2 == 0}.map( _* 10).mkString(","))
   }
 }
