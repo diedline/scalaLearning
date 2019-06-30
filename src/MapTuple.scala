@@ -3,7 +3,7 @@ import scala.collection.mutable
 /***
   *
   * 1.默认情况下Map构造的不可变的集合，里面的内容不可修改，一旦修改就变成新的map，原有的map保持不变；
-  * 2.map的实例时调用的apply
+  * 2.map的实例是调用的apply
   * 3.如果想要直接New出Map实例则需要使用HashMap等具体的map子类
   * 4.spark很多配置也都是通过getOrElse来实现的
   * 5.使用sortedMap可以得到排序的集合
