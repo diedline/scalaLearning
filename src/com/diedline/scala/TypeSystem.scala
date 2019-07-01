@@ -1,3 +1,5 @@
+package com.diedline.scala
+
 
 /**
   * scala类型系统编程实战

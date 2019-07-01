@@ -1,4 +1,4 @@
-import scala.collection.mutable
+package com.diedline.scala
 
 /**
   *

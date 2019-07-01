@@ -1,3 +1,5 @@
+package com.diedline.scala
+
 
 
 trait Logger{

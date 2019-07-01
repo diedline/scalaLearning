@@ -1,3 +1,5 @@
+package com.diedline.scala
+
 object PartialFunction {
   def main(args: Array[String]): Unit = {
     val sample = 1 to 10

@@ -1,3 +1,5 @@
+package com.diedline.scala
+
 import java.io.IOException
 
 object ExceptionAndLazyValue {

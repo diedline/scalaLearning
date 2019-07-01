@@ -1,3 +1,4 @@
+package com.diedline.scala
 
 
 object CtrlStruct {

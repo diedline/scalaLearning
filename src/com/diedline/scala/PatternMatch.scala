@@ -1,3 +1,5 @@
+package com.diedline.scala
+
 
 class DataFrameWork
 case class ComputationFrameWork(name:String,popular:Boolean) extends DataFrameWork
